@@ -4,6 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins, Geist_Mono } from "next/font/google";
 import Providers from "@/components/providers";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppinsSans = Poppins({
   variable: "--font-poppins-sans",
@@ -32,6 +33,8 @@ export default function RootLayout({
         className={`${poppinsSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>{children}</Providers>
+
+        <Analytics />
       </body>
     </html>
   );
