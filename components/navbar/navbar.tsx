@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav
       className={
-        "flex h-20 w-full items-center justify-between px-10 sm:px-18 md:px-24 lg:px-30 xl:px-36"
+        "flex h-20 w-full items-center justify-between px-10 shadow-md sm:px-18 md:px-24 lg:px-30 xl:px-36"
       }
     >
       <Header />
